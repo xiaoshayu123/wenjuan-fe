@@ -1,6 +1,8 @@
 import React, { FC, useState } from "react";
 import styles from "../styles/Common.module.scss";
 import QuestionCard from "../../components/QuestionCard";
+import { Typography } from "antd";
+const { Title } = Typography;
 const List: FC = () => {
   const [questionList, setQuestionList] = useState([
     {
@@ -44,7 +46,7 @@ const List: FC = () => {
     <>
       <div className={styles.header}>
         <div className={styles.left}>
-          <h3>我的问卷</h3>
+          <Title level={3}>我的问卷</Title>
         </div>
         <div className={styles.right}>搜索</div>
       </div>
